@@ -1,7 +1,7 @@
 <div id="layoutSidenav">
     <div id="layoutSidenav_nav">
-        <nav class="sb-sidenav accordion sb-sidenav-dark elevation-1" id="sidenavAccordion">
-            <div class="sb-sidenav-menu bg-dark">
+        <nav class="sb-sidenav accordion sb-sidenav-light elevation-1" id="sidenavAccordion">
+            <div class="sb-sidenav-menu bg-white">
                 <div class="nav">
                     <div class="sb-sidenav-menu-heading">BERANDA</div>
                     <a class="nav-link" href="<?= base_url('dashboard'); ?>">
@@ -20,14 +20,10 @@
                             <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                         </a>
                         <div class="collapse <?= open_dropdown(['kategori', 'satuan', 'barang'], 'show'); ?>" id="collapseMaster" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
-                            <nav class="sb-sidenav-menu-nested nav ml-0">
+                            <nav class="sb-sidenav-menu-nested nav">
                                 <a class="nav-link" href="<?= base_url('kategori'); ?>">
                                     <div class="sb-nav-link-icon"><i class="fas fa-fw fa-tags"></i></div>
                                     Kategori
-                                </a>
-                                <a class="nav-link" href="<?= base_url('satuan'); ?>">
-                                    <div class="sb-nav-link-icon"><i class="fas fa-fw fa-tag"></i></div>
-                                    Satuan
                                 </a>
                                 <a class="nav-link" href="<?= base_url('barang'); ?>">
                                     <div class="sb-nav-link-icon"><i class="fas fa-fw fa-tools"></i></div>
@@ -65,7 +61,7 @@
                 </div>
             </div>
             <div class="sb-sidenav-footer">
-                <div class="small">Login Sebagai:</div>
+                <div class="small">Logged in as:</div>
                 <span class="font-weight-bold text-capitalize"><?= userdata()->level ?></span>
             </div>
         </nav>
@@ -73,16 +69,10 @@
     <div id="layoutSidenav_content">
         <main>
             <div class="container-fluid">
-                <div class="row mt-4 pb-2">
-                    <div class="col">
-                        <h1 class="h3"><?= $title; ?></h1>
-                    </div>
-                    <div class="col">
-                        <nav aria-label="breadcrumb">
-                            <ol class="breadcrumb bg-light py-1 float-right">
-                                <li class="breadcrumb-item"><a href="<?= base_url(); ?>"><i class="fa fa-home"></i></a></li>
-                                <li class="breadcrumb-item active" aria-current="page"><?= $title; ?></li>
-                            </ol>
-                        </nav>
-                    </div>
-                </div>
+                <h1 class="h3 mt-4 pb-2"><?= $title; ?></h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="<?= base_url(); ?>"><i class="fa fa-home"></i></a></li>
+                        <li class="breadcrumb-item active" aria-current="page"><?= $title; ?></li>
+                    </ol>
+                </nav>
