@@ -1,4 +1,4 @@
-<nav class="sb-topnav navbar navbar-expand navbar-dark bg-primary">
+<nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark shadow-sm">
     <button class="btn btn-link btn-sm" id="sidebarToggle" href="#">
         <i class="fas fa-bars fa-fw font-weight-bold text-white"></i>
     </button>
@@ -6,7 +6,7 @@
     <!-- Navbar-->
     <ul class="navbar-nav ml-auto mr-0 mr-md-3">
         <li class="nav-item dropdown">
-            <a class="nav-link text-white dropdown-toggle" id="userDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle text-white" id="userDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <img src="<?= base_url('assets/img/') . userdata()->foto; ?>" class="rounded-circle" style="height: 30px;width:30px;margin-right:10px;">
                 <?= userdata()->nama ?>
             </a>

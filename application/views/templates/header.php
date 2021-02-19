@@ -25,4 +25,4 @@
     </script>
 </head>
 
-<body class="sb-nav-fixed">
+<body class="sb-nav-fixed bg-light">
