@@ -25,10 +25,6 @@
                                     <div class="sb-nav-link-icon"><i class="fas fa-fw fa-tags"></i></div>
                                     Kategori
                                 </a>
-                                <a class="nav-link" href="<?= base_url('satuan'); ?>">
-                                    <div class="sb-nav-link-icon"><i class="fas fa-fw fa-tag"></i></div>
-                                    Satuan
-                                </a>
                                 <a class="nav-link" href="<?= base_url('barang'); ?>">
                                     <div class="sb-nav-link-icon"><i class="fas fa-fw fa-tools"></i></div>
                                     Barang

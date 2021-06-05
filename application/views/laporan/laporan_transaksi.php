@@ -1,19 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <title></title>
-</head>
-
-<body>
+<html><head><title>Laporan Transaksi</title></head><body>
     <style type="text/css">
-        .table-data {
+        table {
             width: 100%;
             border-collapse: collapse;
         }
 
-        .table-data tr th,
-        .table-data tr td {
+        table tr th,
+        table tr td {
             border: 1px solid black;
             font-size: 11pt;
             padding: 10px;
@@ -46,8 +39,7 @@
     </table>
     <br />
     <br />
-    <table class="table-data">
-        <thead>
+    <table>
             <tr>
                 <th>No</th>
                 <th>ID Transaksi</th>
@@ -57,8 +49,6 @@
                 <th>Alamat</th>
                 <th>Petugas</th>
             </tr>
-        </thead>
-        <tbody>
             <?php
             $no = 1;
             foreach ($transaksi as $row) :
@@ -73,9 +63,6 @@
                     <td align="center"><?= $row->nama; ?></td>
                 </tr>
             <?php endforeach; ?>
-        </tbody>
     </table>
 
-</body>
-
-</html>
+</body></html>
